@@ -40,7 +40,9 @@ const response = await fetch("https://ergast.com/api/f1/2022.json");
 ## Wireframes
 
 ------
-
+[Desktop](https://imgur.com/7D12ZMW)  
+[Mobile](https://imgur.com/F89h5gl)  
+[Components](https://imgur.com/ytDeE3s)  
 
 
 
