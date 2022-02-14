@@ -18,7 +18,11 @@ This website utilizes a Formula 1 API to deliver up to date data about Formula 1
 
 [Formula 1 API](http://ergast.com/mrd/)
 
+
+
 ```
+const response = await fetch("https://ergast.com/api/f1/2022.json");  
+
 0: {season: '2022', round: '1', url: 'https://en.wikipedia.org/wiki/2022_Bahrain_Grand_Prix', raceName: 'Bahrain Grand Prix', Circuit: {…}, …}
 1: {season: '2022', round: '2', url: 'https://en.wikipedia.org/wiki/2022_Saudi_Arabian_Grand_Prix', raceName: 'Saudi Arabian Grand Prix', Circuit: {…}, …}
 2: {season: '2022', round: '3', url: 'https://en.wikipedia.org/wiki/2022_Australian_Grand_Prix', raceName: 'Australian Grand Prix', Circuit: {…}, …}
