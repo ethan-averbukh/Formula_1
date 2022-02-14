@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Project Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+## Project Links
+------
+[Github Repo here: Eventually]()
+[Live Website here: Eventually]()
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Project Description
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This website utilizes a Formula 1 API to deliver up to date data about Formula 1. User will be able to request for upcoming schedule, race track images, race results, and current drivers.
 
-### `npm run build`
+## API
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[Formula 1 API](http://ergast.com/mrd/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Wireframes
 
-### `npm run eject`
+------
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### MVP
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+| Component                    | Priority | Estimated Time | Time Invetsted | Actual Time |
+|:------------------------------:|:----------:|:----------------:|:----------------:|:-------------:|
+| Components Basic Structure   | H        | 1hr            | hr             | hr          |
+| API data retrieval           | H        | 2hr            | hr             | hr          |
+| Pass API Data to Components  | H        | 3.5hr          | hr             | hr          |
+| User Input Fields for Search | H        | 5hr            | hr             | hr          |
+|  Buttons and handlers        | H        | 3hr            | hr             | hr          |
+| CSS                          | H        | 25hr           | hr             | hr          |
+| Routing                      | H        | 2hr            | hr             | hr          |
+| Total                        | H        | 41.5hr         | hr             | hr          |
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### PostMVP
 
-### Analyzing the Bundle Size
+| Component                         | Priority | Estimated Time | Time Invetsted | Actual Time |
+|-----------------------------------|----------|----------------|----------------|-------------|
+| Wider range of Data queries       | H        | 2hr            | hr             | hr          |
+| Pass API Data to Components       | H        | 7hr            | hr             | hr          |
+| Drop Down Menu for type of Search | H        | 5hr            | hr             | hr          |
+|  Buttons and handlers             | H        | 3hr            | hr             | hr          |
+| CSS                               | H        | 10hr           | hr             | hr          |
+| Total                             | H        | 27hr           | hr             | hr          |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Additional Libraries
 
-### Advanced Configuration
+Use of the boostrap library for styling purposes:  (https://getbootstrap.com/)
+Use of the font-awesome library for any icons:  (https://fontawesome.com/)
+Use of the google fonts library for fonts:  (https://fonts.google.com/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+## Code Snippet
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```javascript
+Code will go here
+```
