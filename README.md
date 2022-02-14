@@ -68,7 +68,7 @@ const response = await fetch("https://ergast.com/api/f1/2022.json");
 | Component                         | Priority | Estimated Time | Time Invetsted | Actual Time |
 |-----------------------------------|----------|----------------|----------------|-------------|
 | Wider range of Data queries       | H        | 2hr            | hr             | hr          |
-| Pass API Data to Components       | H        | 7hr            | hr             | hr          |
+| Pass API Data to Components  (From Wider Range)       | H        | 7hr            | hr             | hr          |
 | Drop Down Menu for type of Search | H        | 5hr            | hr             | hr          |
 |  Buttons and handlers             | H        | 3hr            | hr             | hr          |
 | CSS                               | H        | 10hr           | hr             | hr          |
