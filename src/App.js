@@ -4,7 +4,6 @@ import Home from "./Home/HomePage";
 
 // MVP: User will be able to select year 2021 2022 and schedule, standings, and circuit tracks.
 
-
 /* 
   How will the data look when returned?
    I want the data to be presented in the carousel, can this be independent of what data is requested?
@@ -23,8 +22,8 @@ import Home from "./Home/HomePage";
 */
 
 function App() {
-  const [selectedYear, setSelectedYear] = useState('');
-  const [dataType, setDataType] = useState('');
+  const [selectedYear, setSelectedYear] = useState("");
+  const [dataType, setDataType] = useState("");
 
   // Use Effect runs API call; API call takes in two user inputs: 1)Data Type, 2) Year; useEffect is set to track state variable changes to: selectedYear and dataType
   // Conditional checks to make sure state variables are not empty strings, and then runs the API Call.
@@ -35,29 +34,33 @@ function App() {
       );
       const data = await response.json();
 
-      // console.log(data);
+      console.log(data);
     };
-    if(selectedYear !== '' && dataType !== ''){
+    if (selectedYear !== "" && dataType !== "") {
       apiFetch(selectedYear, dataType);
     }
-  },[selectedYear,dataType]);
+  }, [selectedYear, dataType]);
 
+  // Param: dataQuery --> This parameter is the user's choice for what information he wants. Received from Home Component;
+  // updateDataType passed into Home Component as reference.
   const updateDataType = (dataQuery) => {
-    console.log("Data passed up:", dataQuery);
     setDataType(dataQuery);
-    console.log("data Type:", dataType);
-  }
-
+  };
+  console.log("data Type:", dataType);
+  // Param: yearSelected --> This parameter is the user's choice for what year he wants. Received from Home Component;
+  // updateYear passed into Home Component as reference.
   const updateYear = (yearSelected) => {
-    console.log("Year passed up:", yearSelected);
     setSelectedYear(yearSelected);
-    console.log("Selected Year:", selectedYear);
-  }
+  };
+  console.log("Selected Year:", selectedYear);
 
   return (
-  <div>
-    <Home handleSelectedYear={updateYear} handleSelectedDataType={updateDataType}/>
-  </div>
+    <div>
+      <Home
+        handleSelectedYear={updateYear}
+        handleSelectedDataType={updateDataType}
+      />
+    </div>
   );
 }
 
