@@ -66,7 +66,7 @@ const imageToGP = (race) => {
         return us;
       case "Mexico City Grand Prix":
         return mexico;
-      case "Sâo Paulo Grand Prix":
+      case "São Paulo Grand Prix":
         return brazilian;
       case "Abu Dhabi Grand Prix":
         return abudhabi;
