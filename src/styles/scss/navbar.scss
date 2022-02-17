@@ -1,16 +1,28 @@
 .nav-bar {
+    font-size: 2em;
+    width: 100vw;
+    height: 50px;
     display: grid;
     grid-template: 1fr / 1fr 2fr 1fr;
 
     &-logo {
         grid-column: 1/2;
+        justify-self: start;
     }
     &-title {
         grid-column: 2/3;
+        place-self: center;
     }
     &-menu {
+        font-size: 1rem;
         grid-column: 3/4;
-        display: flex;
-        justify-content: flex-end;
+        display: grid;
+        grid-template: 1fr / repeat(3, 1fr);
+        width: 100%;
+
+        & a {
+           place-self: center; 
+           
+        }
     }
 }

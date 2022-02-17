@@ -1,17 +1,27 @@
 .nav-bar {
+  font-size: 2em;
+  width: 100vw;
+  height: 50px;
   display: grid;
   grid-template: 1fr/1fr 2fr 1fr;
 }
 .nav-bar-logo {
   grid-column: 1/2;
+  justify-self: start;
 }
 .nav-bar-title {
   grid-column: 2/3;
+  place-self: center;
 }
 .nav-bar-menu {
+  font-size: 1rem;
   grid-column: 3/4;
-  display: flex;
-  justify-content: flex-end;
+  display: grid;
+  grid-template: 1fr/repeat(3, 1fr);
+  width: 100%;
+}
+.nav-bar-menu a {
+  place-self: center;
 }
 
 /*# sourceMappingURL=navbar.css.map */
