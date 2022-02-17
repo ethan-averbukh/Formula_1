@@ -32,7 +32,7 @@ const Carousel = ({ driverInfo, raceInfo }) => {
    
       return (
         <label className="card" htmlFor={`item-${index}`} key={index}>
-          <img src={require(circuitImage)} alt="circuit track" />
+          <img src={circuitImage} alt="circuit track" />
           <p>{race.raceName}</p>
           <p>{race.Circuit.Location.country}</p>
           <p>
@@ -49,8 +49,8 @@ const Carousel = ({ driverInfo, raceInfo }) => {
         <input type="radio" name="slider" id="item-3" />
         <input type="radio" name="slider" id="item-4" />
         <input type="radio" name="slider" id="item-5" /> */}
-        <div className="race-info">{raceInfoLabels[0]}</div>
-        {/* <div className="driver-info">{driverInfo && driverInfoLabels}</div> */}
+        <div className="race-info">{raceInfoLabels}</div>
+        <div className="driver-info">{driverInfoLabels}</div>
     </div>
   );
 
