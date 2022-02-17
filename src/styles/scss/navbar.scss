@@ -1,0 +1,16 @@
+.nav-bar {
+    display: grid;
+    grid-template: 1fr / 1fr 2fr 1fr;
+
+    &-logo {
+        grid-column: 1/2;
+    }
+    &-title {
+        grid-column: 2/3;
+    }
+    &-menu {
+        grid-column: 3/4;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
