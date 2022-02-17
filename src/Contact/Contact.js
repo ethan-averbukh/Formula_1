@@ -1,6 +1,9 @@
 import React from "react";
 
 const Contact = () => {
+    const handleSubmit = () => {
+        
+    }
   return (
     <div>
       <form className="contact" onSubmit={handleSubmit}>

@@ -6,11 +6,11 @@ import imageToGP from "../imageToGp";
 
 */
 
-const Carousel = ({ driverInfo, raceInfo }) => {   
+const Table = ({ driverInfo, raceInfo }) => {
   //const [isSelected, setIsSelected] = useState("");
   let driverInfoLabels = [];
   let raceInfoLabels = [];
-  let circuitImage = '';
+  let circuitImage = "";
   if (driverInfo !== []) {
     driverInfoLabels = driverInfo.map((driver, index) => {
       return (
@@ -25,11 +25,12 @@ const Carousel = ({ driverInfo, raceInfo }) => {
       );
     });
   }
+
   if (raceInfo !== []) {
     raceInfoLabels = raceInfo.map((race, index) => {
-    // Function which returns image url based on race name.
+      // Function which returns image url based on race name.
       circuitImage = imageToGP(race.raceName);
-   
+
       return (
         <label className="card" htmlFor={`item-${index}`} key={index}>
           <img src={circuitImage} alt="circuit track" />
@@ -43,18 +44,11 @@ const Carousel = ({ driverInfo, raceInfo }) => {
     });
   }
   return (
-    <div id="carousel">
-        {/* <input type="radio" name="slider" id="item-1" />
-        <input type="radio" name="slider" id="item-2" />
-        <input type="radio" name="slider" id="item-3" />
-        <input type="radio" name="slider" id="item-4" />
-        <input type="radio" name="slider" id="item-5" /> */}
-        <div className="race-info">{raceInfoLabels}</div>
-        <div className="driver-info">{driverInfoLabels}</div>
+    <div id="table">
+      <div className="race-info">{raceInfoLabels}</div>
+      <div className="driver-info">{driverInfoLabels}</div>
     </div>
   );
-
-  
 };
 
-export default Carousel;
+export default Table;

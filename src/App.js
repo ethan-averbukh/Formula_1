@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./Home/HomePage";
 import About from "./About/About";
 import Contact from "./Contact/Contact";
-import Carousel from "./Carousel/Carousel";
+import NavBar from "./Navigation/Navbar";
 
 // MVP: User will be able to select year 2021 2022 and schedule, standings, and circuit tracks.
 
@@ -69,7 +69,8 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="App">
+      <NavBar />
       <Routes>
         <Route
           path="/"
