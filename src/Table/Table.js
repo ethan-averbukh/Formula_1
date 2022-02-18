@@ -1,27 +1,54 @@
 import React, { useState } from "react";
-import imageToGP from "../imageToGp";
 import {Table } from 'react-bootstrap';
 /*
  Receives an array of data based on user Request: 
 
 */
 
-const Table = ({ driverInfo, raceInfo }) => {
-  //const [isSelected, setIsSelected] = useState("");
+const TableComponent = ({ driverInfo, raceInfo }) => {
+  const [isRaceSelected, setIsRaceSelected] = useState('');
+  const [isDriverSelected, setIsDriverSelected] = useState('');
   let driverInfoLabels = [];
   let raceInfoLabels = [];
-  let circuitImage = "";
+  const raceInfoHeaders = [
+    <th>#</th>,
+    <th>Race Name</th>,
+    <th>Location</th>,
+    <th>Date</th>,
+    <th>Time</th>,
+    <th>Link</th>
+  ]
+  const driverInfoHeaders = [
+    <th>First Name</th>,
+    <th>Family Name</th>,
+    <th>Number</th>,
+    <th>Nationality</th>,
+    <th>Date of Birth</th>,
+    <th>Link</th>
+  ]
   if (driverInfo !== []) {
     driverInfoLabels = driverInfo.map((driver, index) => {
       return (
-        <label className="card" htmlFor={`item-${index}`} key={driver.driverId}>
-          <img src="" alt="" />
-          <p>
-            {driver.givenName} {driver.familyName}
-          </p>
-          <p>{driver.permanentNumber}</p>
-          {/* <p>{drivers current Team}</p> */}
-        </label>
+        <tr key={index}>
+        <td>
+        {driver.givenName}
+        </td>
+        <td>
+          {driver.familyName}
+        </td>
+        <td>
+        {driver.permanentNumber}
+        </td>
+        <td>
+          {driver.nationality}
+        </td>
+        <td>
+          {driver.dateOfBirth}
+        </td>
+        <td>
+          <a href={driver.url}>{driver.givenName} {driver.familyName}</a>
+        </td>
+      </tr>
       );
     });
   }
@@ -29,26 +56,46 @@ const Table = ({ driverInfo, raceInfo }) => {
   if (raceInfo !== []) {
     raceInfoLabels = raceInfo.map((race, index) => {
       // Function which returns image url based on race name.
-      circuitImage = imageToGP(race.raceName);
 
       return (
-        <label className="card" htmlFor={`item-${index}`} key={index}>
-          <img src={circuitImage} alt="circuit track" />
-          <p>{race.raceName}</p>
-          <p>{race.Circuit.Location.country}</p>
-          <p>
-            {race.date} {race.time}
-          </p>
-        </label>
+        <tr key={index}>
+          <td>
+            {race.round}
+          </td>
+          <td>
+            {race.raceName}
+          </td>
+          <td>
+          {race.Circuit.Location.country}
+          </td>
+          <td>
+          {race.date}
+          </td>
+          <td>
+          {race.time}
+          </td>
+          <td>
+            <a href={race.url}>{race.raceName}</a>
+          </td>
+        </tr>
       );
     });
   }
   return (
-    <div id="table">
-      <div className="race-info">{raceInfoLabels}</div>
-      <div className="driver-info">{driverInfoLabels}</div>
-    </div>
+    <Table id="table">
+      <thead>
+        <tr>
+          {isRaceSelected && raceInfoHeaders}
+          {isDriverSelected && driverInfoHeaders}
+        </tr>
+      </thead>
+      <tbody>
+        {raceInfoLabels}
+        {driverInfoLabels}
+      </tbody>
+      {/* <div className="driver-info">{driverInfoLabels}</div> */}
+    </Table>
   );
 };
 
-export default Table;
+export default TableComponent;
