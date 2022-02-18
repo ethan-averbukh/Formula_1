@@ -21,8 +21,7 @@
   grid-template: 1fr/1fr;
 }
 .nav-bar-menu-icon {
-  justify-self: end;
-  align-self: center;
+  place-self: center;
   padding: 10px;
 }
 .nav-bar-menu-items {
@@ -84,6 +83,27 @@
     place-self: center;
     text-decoration: none;
     color: white;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .nav-bar-menu {
+    font-size: 1rem;
+    grid-column: 3/4;
+    width: 100%;
+  }
+  .nav-bar-menu-icon.css-tzssek-MuiSvgIcon-root {
+    display: none;
+  }
+  .nav-bar-menu-items {
+    display: grid;
+    grid-template: 1fr/repeat(3, 1fr);
+  }
+  .nav-bar-menu-items a {
+    place-self: center;
+    text-decoration: none;
+    color: white;
+    width: 100%;
   }
 }
 

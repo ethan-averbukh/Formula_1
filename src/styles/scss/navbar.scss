@@ -21,8 +21,7 @@
         grid-template: 1fr / 1fr;
 
         &-icon {
-            justify-self: end;
-            align-self: center;
+            place-self: center;
             padding: 10px;
         }
         &-items {
@@ -70,7 +69,6 @@
             &-menu {
                 font-size: 1rem;
                 grid-column: 3/4;
-
                 width: 100%;
                 &-icon.css-tzssek-MuiSvgIcon-root {
                     display: none;
@@ -83,7 +81,35 @@
                    place-self: center;
                    text-decoration: none;
                    color: white;
+                   width: 100%;
+                }
 
+             
+        
+            }
+
+    }
+ 
+}
+
+@media only screen and ( min-width: 900px) {
+    .nav-bar {
+            &-menu {
+                font-size: 1rem;
+                grid-column: 3/4;
+                width: 100%;
+                &-icon.css-tzssek-MuiSvgIcon-root {
+                    display: none;
+                }
+                &-items {
+                    display: grid;
+                    grid-template: 1fr / repeat(3, 1fr);
+                }
+                &-items a{
+                   place-self: center;
+                   text-decoration: none;
+                   color: white;
+                   width: 100%;
                 }
 
              

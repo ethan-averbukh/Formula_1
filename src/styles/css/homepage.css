@@ -31,5 +31,15 @@
   color: white;
   text-align: center;
 }
+.home-page-select {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.home-page-table {
+  margin: 0 auto;
+  padding-top: 20px;
+}
 
 /*# sourceMappingURL=homepage.css.map */
