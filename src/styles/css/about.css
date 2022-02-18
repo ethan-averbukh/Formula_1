@@ -1,8 +1,16 @@
 .about {
+  background-color: #011E3D;
+  height: 100vh;
+  color: white;
   font-size: 14px;
 }
 .about-title {
-  font-size: 2em;
+  font-size: 4em;
+  text-align: center;
+  margin-top: 2em;
+}
+.about-descript {
+  font-size: 1.5em;
 }
 
 /*# sourceMappingURL=about.css.map */

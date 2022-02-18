@@ -1,10 +1,15 @@
 .about {
+    background-color: #011E3D;
+    height: 100vh;
+    color: white;
     font-size: 14px;
     &-title {
-        font-size: 2em;
+        font-size: 4em;
+        text-align: center;
+        margin-top: 2em;
     }
     &-descript {
-
+        font-size: 1.5em;
     }
     &-search-options {
 

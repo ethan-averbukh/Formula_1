@@ -1,7 +1,14 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap");
+body {
+  font-family: "Racing Sans One", cursive;
+  margin: 0px;
   font-size: 14px;
-  height: auto;
-  margin: 10px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 /*# sourceMappingURL=App.css.map */
