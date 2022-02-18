@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Select from "react-select";
-import NavBar from "../Navigation/Navbar";
 import Table from "../Table/Table";
-import homeImage from '../assets/images/home_page.jpeg';
 
 // Receives two event handlers which send the data back up to App to update State for API call.
 const Home = ({ handleSelectedDataType, handleSelectedYear, driverInfo, raceInfo }) => {
