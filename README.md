@@ -56,9 +56,9 @@ const response = await fetch("https://ergast.com/api/f1/2022.json");
 | Pass API Data to Components  | H        | 3.5hr          | 10hr             | hr          |
 | User Input Fields for Search | H        | 5hr            | 7hr             | hr          |
 |  Buttons and handlers        | H        | 3hr            | 1hr             | hr          |
-| CSS                          | H        | 25hr           | 20hr             | hr          |
+| CSS                          | H        | 25hr           | 40+hr             | hr          |
 | Routing                      | H        | 2hr            | .5hr             | hr          |
-| Total                        | H        | 41.5hr         | hr             | hr          |
+| Total                        | H        | 41.5hr         | 65.5hr             | hr          |
 
 
 
