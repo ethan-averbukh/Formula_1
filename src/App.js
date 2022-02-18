@@ -25,8 +25,8 @@ import NavBar from "./Navigation/Navbar";
 */
 
 function App() {
-  const [selectedYear, setSelectedYear] = useState("");
-  const [dataType, setDataType] = useState("");
+  const [selectedYear, setSelectedYear] = useState('');
+  const [dataType, setDataType] = useState('');
   const [races, setRaces] = useState([]);
   const [drivers, setDrivers] = useState([]);
 
@@ -67,6 +67,7 @@ function App() {
   const updateYear = (yearSelected) => {
     setSelectedYear(yearSelected);
   };
+  
 
   return (
     <div className="App">

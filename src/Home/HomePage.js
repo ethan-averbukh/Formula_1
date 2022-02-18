@@ -21,6 +21,11 @@ const Home = ({ handleSelectedDataType, handleSelectedYear, driverInfo, raceInfo
     { label: "Drivers", value: "drivers" },
   ];
   const yearValues = [
+    { label: "2016", value: "2016" },
+    { label: "2017", value: "2017" },
+    { label: "2018", value: "2018" },
+    { label: "2019", value: "2019" },
+    { label: "2020", value: "2020" },
     { label: "2021", value: "2021" },
     { label: "2022", value: "2022" },
   ];
@@ -41,17 +46,22 @@ const Home = ({ handleSelectedDataType, handleSelectedYear, driverInfo, raceInfo
             Don't Blink
           </h1>
           <h4 className="home-page-slogan-small">You Might Miss It</h4>
-          <p className="home-page-descript">Your one stop shop for Formula One information.<br/> Use the menus below to choose the type of information you want and from which year.</p>
+          <p className="home-page-descript">Your one stop shop for Formula One information.</p>
         </div>
       </div>
       <div className="home-page-select">
-        <h3 className="info">Information</h3>
-        <Select options={dataValues} onChange={handleDataChange} />
-        <h3 className="year">Year</h3>
-        <Select options={yearValues} onChange={handleYearChange} />
+        <div className="home-page-info">
+          <h3 className="info">Information</h3>
+          <Select options={dataValues} onChange={handleDataChange} />
+        </div>
+        <div className="home-page-year">
+          <h3 className="year">Year</h3>
+          <Select options={yearValues} onChange={handleYearChange} />
+        </div>
       </div>
       <div className="home-page-table">
-        <Table driverInfo={driverInfo} raceInfo={raceInfo} />
+        {dataTypeShown === 'schedule' && <Table driverInfo={[]} raceInfo={raceInfo} />}
+        {dataTypeShown === 'drivers' && <Table driverInfo={driverInfo} raceInfo={[]} />}
       </div>
       
     </div>
