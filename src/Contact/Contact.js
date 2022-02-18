@@ -1,25 +1,27 @@
 import React from "react";
+import { Form, Button } from "react-bootstrap";
 
 const Contact = () => {
-    const handleSubmit = () => {
-        
-    }
+  const handleSubmit = () => {
+
+  }
   return (
-    <div>
-      <form className="contact" onSubmit={handleSubmit}>
-        <div className="contact-name">
-          <label htmlFor="name">Name</label>
-          <input type="text" className="" />
-        </div>
-        <div className="contact-email">
-          <label htmlFor="email-input">Email Address</label>
-          <input type="email" className="" />
-        </div>
-        <div className="contact-message">
-          <label htmlFor="message">Message</label>
-          <textarea rows="5" type="text"></textarea>
-        </div>
-      </form>
+    <div className="contact">
+      <h1 className="contact-title">Contact</h1>
+      <Form>
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Label>Email address</Form.Label>
+          <Form.Control type="email" placeholder="Enter email" />
+        </Form.Group>
+
+        <Form.Group className="mb-3" controlId="formBasicPassword">
+          <Form.Label>Message</Form.Label>
+          <Form.Control as="textarea" aria-label="" />
+        </Form.Group>
+        <Button variant="primary" type="submit">
+          Submit
+        </Button>
+      </Form>
     </div>
   );
 };
