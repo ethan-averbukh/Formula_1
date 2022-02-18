@@ -35,7 +35,15 @@ const Home = ({ handleSelectedDataType, handleSelectedYear, driverInfo, raceInfo
   };
   return (
     <div className="home-page">
-      <div className="home-page-image"><img src={homeImage} alt="Formula 1" /></div>
+      <div className="home-page-image">
+        <div className="home-page-slogan">
+          <h1 className="home-page-slogan-large">
+            Don't Blink
+          </h1>
+          <h4 className="home-page-slogan-small">You Might Miss It</h4>
+          <p className="home-page-descript">Your one stop shop for Formula One information.<br/> Use the menus below to choose the type of information you want and from which year.</p>
+        </div>
+      </div>
       <div className="home-page-select">
         <h3 className="info">Information</h3>
         <Select options={dataValues} onChange={handleDataChange} />
