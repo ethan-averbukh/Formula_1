@@ -77,7 +77,7 @@ const response = await fetch("https://ergast.com/api/f1/2022.json");
 
 ## Additional Libraries
 
-Use of the boostrap library for styling purposes:  (https://getbootstrap.com/)
+Use of the react-boostrap library for styling purposes:  (https://react-bootstrap.github.io/)
 Use of the font-awesome library for any icons:  (https://fontawesome.com/)
 Use of the google fonts library for fonts:  (https://fonts.google.com/)
 
