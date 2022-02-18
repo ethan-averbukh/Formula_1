@@ -4,7 +4,6 @@
 
 ## Project Links
 ------
-[Github Repo here: Eventually]()  
 
 [Live Website here: Eventually]()  
 
@@ -50,15 +49,15 @@ const response = await fetch("https://ergast.com/api/f1/2022.json");
 ### MVP
 
 
-| Component                    | Priority | Estimated Time | Time Invetsted | Actual Time |
+| Component                    | Priority | Estimated Time | Time Invested | Actual Time |
 |:------------------------------:|:----------:|:----------------:|:----------------:|:-------------:|
-| Components Basic Structure   | H        | 1hr            | hr             | hr          |
-| API data retrieval           | H        | 2hr            | hr             | hr          |
-| Pass API Data to Components  | H        | 3.5hr          | hr             | hr          |
-| User Input Fields for Search | H        | 5hr            | hr             | hr          |
-|  Buttons and handlers        | H        | 3hr            | hr             | hr          |
-| CSS                          | H        | 25hr           | hr             | hr          |
-| Routing                      | H        | 2hr            | hr             | hr          |
+| Components Basic Structure   | H        | 1hr            | 2hr             | hr          |
+| API data retrieval           | H        | 2hr            | 5hr             | hr          |
+| Pass API Data to Components  | H        | 3.5hr          | 10hr             | hr          |
+| User Input Fields for Search | H        | 5hr            | 7hr             | hr          |
+|  Buttons and handlers        | H        | 3hr            | 1hr             | hr          |
+| CSS                          | H        | 25hr           | 20hr             | hr          |
+| Routing                      | H        | 2hr            | .5hr             | hr          |
 | Total                        | H        | 41.5hr         | hr             | hr          |
 
 
@@ -86,5 +85,34 @@ Use of the google fonts library for fonts:  (https://fonts.google.com/)
 ## Code Snippet
 
 ```javascript
-Code will go here
+useEffect(() => {
+    const apiFetch = async (userYearRequest, userTypeRequest) => {
+      if (userTypeRequest === "schedule") {
+        const response = await fetch(
+          `https://ergast.com/api/f1/${userYearRequest}.json`
+        );
+        const data = await response.json();
+        setRaces(data.MRData.RaceTable.Races);
+      } else {
+        const response = await fetch(
+          `https://ergast.com/api/f1/${userYearRequest}/${userTypeRequest}.json`
+        );
+        const data = await response.json();
+        setDrivers(data.MRData.DriverTable.Drivers);
+      }
+    };
+    if (selectedYear !== "" && dataType !== "") {
+      apiFetch(selectedYear, dataType);
+    }
+  }, [selectedYear, dataType]);
 ```
+
+## Issues  
+
+1) Custom carousel display proved to be more work than expected and was scrapped for a more static table display.  
+
+2) CSS responsiveness at different breakpoints not exact. Spacing between some elements is a little off.
+
+3) Selection from the menu's on the first selection triggers what appears to be a re-render of the entire application.
+
+4) Contact form not sending data to excel sheet.
