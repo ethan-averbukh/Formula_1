@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import imageToGP from "../imageToGp";
-
+import {Table } from 'react-bootstrap';
 /*
  Receives an array of data based on user Request: 
 
