@@ -5,7 +5,7 @@
 ## Project Links
 ------
 
-[Live Website here: Eventually](https://ethan-averbukh.github.io/Formula_1/)  
+[Live Site](https://ethan-averbukh.github.io/Formula_1/)  
 
 
 
