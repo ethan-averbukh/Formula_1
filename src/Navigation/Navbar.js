@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import { Link } from 'react-router-dom';
-import Home from "../Home/HomePage";
-import Contact from "../Contact/Contact";
-import About from "../About/About";
+import Home from "./../Home/HomePage";
+import Contact from "./../Contact/Contact";
+import About from "./../About/About";
 import MenuIcon from '@mui/icons-material/Menu';
 import Dropdown from "./Dropdown";
 
@@ -23,7 +23,8 @@ const NavBar = () => {
         <span>Formula 1</span>
       </div>
       <div className="nav-bar-menu">
-        <MenuIcon 
+        <MenuIcon
+            id="Hamburger-Menu" 
             fontSize="large" 
             className="nav-bar-menu-icon" 
             onClick={handleClick} />

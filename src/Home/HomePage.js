@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Select from "react-select";
-import Table from "../Table/Table";
+import Table from "./../Table/Table";
 
 // Receives two event handlers which send the data back up to App to update State for API call.
 const Home = ({ handleSelectedDataType, handleSelectedYear, driverInfo, raceInfo }) => {

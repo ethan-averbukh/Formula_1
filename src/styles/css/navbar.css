@@ -92,7 +92,7 @@
     grid-column: 3/4;
     width: 100%;
   }
-  .nav-bar-menu-icon.css-tzssek-MuiSvgIcon-root {
+  .nav-bar-menu #Hamburger-Menu {
     display: none;
   }
   .nav-bar-menu-items {

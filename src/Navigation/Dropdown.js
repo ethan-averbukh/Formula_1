@@ -1,8 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import About from '../About/About';
-import Contact from '../Contact/Contact';
-import Home from '../Home/HomePage';
+import About from './../About/About';
+import Contact from './../Contact/Contact';
+import Home from './../Home/HomePage';
 import CloseIcon from '@mui/icons-material/Close';
 
 

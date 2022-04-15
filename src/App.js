@@ -74,7 +74,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route
-          path="/"
+          index
           element={
             <Home
               handleSelectedYear={updateYear}
