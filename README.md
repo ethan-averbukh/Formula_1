@@ -109,10 +109,13 @@ useEffect(() => {
 
 ## Issues  
 
-1) Custom carousel display proved to be more work than expected and was scrapped for a more static table display.  
+1) Custom carousel display proved to be more work than expected and was scrapped for a more static table display.  ()
 
 2) CSS responsiveness at different breakpoints not exact. Spacing between some elements is a little off.
 
 3) Selection from the menu's on the first selection triggers what appears to be a re-render of the entire application.
+   1) Updated: On section re-renders, sizing changes causing page to jump around.
 
 4) Contact form not sending data to excel sheet.
+
+5) Home page not displaying until Home Link is clicked. Possibly due to styling routing issue 
