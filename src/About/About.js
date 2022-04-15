@@ -1,14 +1,14 @@
 import React from "react";
-import alfa from '../assets/images/AlfaRomeo.png';
-import alpha from '../assets/images/AlphaTauri.jpg';
-import alpine from '../assets/images/Alpine.jpg';
-import aston from '../assets/images/AstonMartin.png';
-import ferrari from '../assets/images/Ferrari.jpg';
-import haas from '../assets/images/Haas.jpg';
-import mclaren from '../assets/images/Mclaren.jpg';
-import mercedes from '../assets/images/Mercedes.jpg';
-import redbull from '../assets/images/Redbull.jpg';
-import williams from '../assets/images/Williams.jpg';
+import alfa from './../assets/images/AlfaRomeo.png';
+import alpha from './../assets/images/AlphaTauri.jpg';
+import alpine from './../assets/images/Alpine.jpg';
+import aston from './../assets/images/AstonMartin.png';
+import ferrari from './../assets/images/Ferrari.jpg';
+import haas from './../assets/images/Haas.jpg';
+import mclaren from './../assets/images/Mclaren.jpg';
+import mercedes from './../assets/images/Mercedes.jpg';
+import redbull from './../assets/images/Redbull.jpg';
+import williams from './../assets/images/Williams.jpg';
 
 
 
